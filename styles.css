@@ -233,6 +233,16 @@ textarea:focus {
   min-height: 24px;
 }
 
+.helper-note {
+  background: #edf5f1;
+  border-left: 4px solid var(--primary);
+  border-radius: 8px;
+  color: var(--muted);
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding: 12px 14px;
+}
+
 .status-message.success {
   color: var(--primary);
 }

@@ -3,6 +3,16 @@ const statusMessage = document.querySelector("#statusMessage");
 const searchInput = document.querySelector("#searchInput");
 const refreshButton = document.querySelector("#refreshButton");
 
+const productImages = {
+  "canvas tote bag": "assets/images/tote-bag.svg",
+  "desk lamp": "assets/images/desk-lamp.svg",
+  "wireless mouse": "assets/images/wireless-mouse.svg",
+  fitness: "assets/images/fitness-bottle.svg",
+  accessories: "assets/images/tote-bag.svg",
+  home: "assets/images/desk-lamp.svg",
+  electronics: "assets/images/wireless-mouse.svg",
+};
+
 function formatCurrency(price) {
   return new Intl.NumberFormat("en-IN", {
     style: "currency",
@@ -14,6 +24,12 @@ function formatCurrency(price) {
 function setStatus(message, type = "") {
   statusMessage.textContent = message;
   statusMessage.className = `status-message ${type}`.trim();
+}
+
+function getProductImage(product) {
+  const nameKey = product.name.toLowerCase();
+  const categoryKey = product.category.toLowerCase();
+  return productImages[nameKey] || productImages[categoryKey] || "assets/images/product-default.svg";
 }
 
 function renderProducts(products) {
@@ -29,6 +45,11 @@ function renderProducts(products) {
   products.forEach((product) => {
     const card = document.createElement("article");
     card.className = "product-card";
+
+    const image = document.createElement("img");
+    image.className = "product-image";
+    image.src = getProductImage(product);
+    image.alt = `${product.name} illustration`;
 
     const title = document.createElement("h2");
     title.textContent = product.name;
@@ -65,7 +86,7 @@ function renderProducts(products) {
 
     meta.append(category, quantity);
     actions.append(deleteButton);
-    card.append(title, meta, price, description, actions);
+    card.append(image, title, meta, price, description, actions);
     productsContainer.append(card);
   });
 }

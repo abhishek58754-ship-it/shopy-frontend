@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Curated product display</title>
+  <desc id="desc">A clean arrangement of shopping products for the Shopy product app.</desc>
+  <rect width="960" height="520" fill="#eef4ef"/>
+  <circle cx="800" cy="96" r="104" fill="#f7d8cc"/>
+  <circle cx="124" cy="420" r="138" fill="#d7e8e1"/>
+  <path d="M72 392c128-68 278-56 450-24 154 29 260 20 366-48v200H72z" fill="#dfeae6"/>
+  <rect x="118" y="142" width="214" height="246" rx="22" fill="#ffffff" stroke="#cbd8d3" stroke-width="4"/>
+  <path d="M178 162c0-46 22-74 48-74s48 28 48 74" fill="none" stroke="#146c5c" stroke-width="18" stroke-linecap="round"/>
+  <rect x="174" y="218" width="104" height="26" rx="13" fill="#d94f30"/>
+  <rect x="172" y="268" width="108" height="16" rx="8" fill="#9bb9ae"/>
+  <rect x="172" y="298" width="74" height="16" rx="8" fill="#c4d4ce"/>
+  <rect x="396" y="114" width="188" height="302" rx="28" fill="#146c5c"/>
+  <rect x="424" y="146" width="132" height="208" rx="18" fill="#f8fbf8"/>
+  <circle cx="490" cy="386" r="14" fill="#f8fbf8"/>
+  <path d="M438 252h104M455 222h70M462 284h56" stroke="#d94f30" stroke-width="15" stroke-linecap="round"/>
+  <rect x="650" y="164" width="176" height="210" rx="88" fill="#ffffff" stroke="#cbd8d3" stroke-width="4"/>
+  <rect x="714" y="118" width="48" height="70" rx="20" fill="#2b2f33"/>
+  <path d="M682 252c26-28 84-28 112 0" fill="none" stroke="#d94f30" stroke-width="18" stroke-linecap="round"/>
+  <rect x="696" y="298" width="84" height="18" rx="9" fill="#146c5c"/>
+  <ellipse cx="480" cy="462" rx="290" ry="28" fill="#cfded8"/>
+</svg>

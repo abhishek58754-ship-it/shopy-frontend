@@ -83,6 +83,16 @@ main {
   margin-bottom: 24px;
 }
 
+.heading-visual {
+  aspect-ratio: 3 / 2;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  max-width: 230px;
+  object-fit: cover;
+  width: 28%;
+}
+
 .eyebrow {
   color: var(--accent);
   font-size: 0.78rem;
@@ -154,6 +164,40 @@ button:hover {
   padding: 20px;
 }
 
+.hero-panel {
+  align-items: center;
+  background: linear-gradient(120deg, #ffffff 0%, #ffffff 52%, #edf5f1 52%, #edf5f1 100%);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 22px;
+  grid-template-columns: minmax(0, 0.9fr) minmax(260px, 1.1fr);
+  margin-bottom: 24px;
+  overflow: hidden;
+  padding: 24px;
+}
+
+.hero-panel h2 {
+  font-size: clamp(1.5rem, 4vw, 2.35rem);
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+
+.hero-panel p:last-child {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+.hero-panel img {
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
 .toolbar label,
 .field-group label {
   display: block;
@@ -212,8 +256,18 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  min-height: 260px;
+  min-height: 390px;
   padding: 20px;
+}
+
+.product-image {
+  aspect-ratio: 3 / 2;
+  background: #eef4ef;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: block;
+  object-fit: cover;
+  width: 100%;
 }
 
 .product-card h2 {
@@ -308,5 +362,16 @@ textarea:focus {
   .search-row button,
   .form-actions > * {
     width: 100%;
+  }
+
+  .heading-visual {
+    max-width: none;
+    width: 100%;
+  }
+
+  .hero-panel {
+    background: var(--surface);
+    grid-template-columns: 1fr;
+    padding: 18px;
   }
 }

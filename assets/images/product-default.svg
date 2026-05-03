@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" role="img" aria-labelledby="title">
+  <title id="title">Product box</title>
+  <rect width="420" height="280" rx="18" fill="#f5f7f4"/>
+  <circle cx="316" cy="76" r="56" fill="#f7d8cc"/>
+  <path d="M112 112l98-54 98 54-98 54z" fill="#ffffff" stroke="#c4d4ce" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M112 112v92l98 54v-92z" fill="#d7e8e1" stroke="#c4d4ce" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M308 112v92l-98 54v-92z" fill="#ffffff" stroke="#c4d4ce" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M170 86l98 54" stroke="#d94f30" stroke-width="12" stroke-linecap="round"/>
+</svg>

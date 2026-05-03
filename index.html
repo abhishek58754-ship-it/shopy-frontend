@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopy | Products</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="js/api.js" defer></script>
+    <script src="js/home.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Primary navigation">
+        <a class="brand" href="index.html">Shopy</a>
+        <div class="nav-links">
+          <a class="active" href="index.html" aria-current="page">Home</a>
+          <a href="add-product.html">Add Product</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-heading" aria-labelledby="products-title">
+        <div>
+          <p class="eyebrow">Inventory</p>
+          <h1 id="products-title">Products</h1>
+          <p class="intro">Browse products loaded directly from the Flask API.</p>
+        </div>
+        <a class="primary-action" href="add-product.html">Add Product</a>
+      </section>
+
+      <section class="toolbar" aria-label="Product filters">
+        <label for="searchInput">Search products</label>
+        <div class="search-row">
+          <input id="searchInput" type="search" placeholder="Search by name, category, or description" />
+          <button id="refreshButton" type="button">Refresh</button>
+        </div>
+      </section>
+
+      <section aria-live="polite" aria-busy="false">
+        <p id="statusMessage" class="status-message">Loading products...</p>
+        <div id="productsContainer" class="product-grid"></div>
+      </section>
+    </main>
+  </body>
+</html>
